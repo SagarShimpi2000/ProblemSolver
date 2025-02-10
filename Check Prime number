@@ -1,1 +1,36 @@
-hello world
+//Q: Check Given number is prime or not 
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        
+         Console.Write("Enter a number:");
+        int num=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Your number is: "+num);
+        int check=0;
+        if(num==0 || num==1)
+        {
+            check=1;
+        }
+        for(int i=2;i<=num/2;++i)
+        {
+            if(num%i==0)
+            {
+                check=1;
+                break;
+            }
+        }
+        if(check==1)
+        {
+          Console.WriteLine(num+" is not prime number");
+        }
+        else
+        {
+         Console.WriteLine(num+" is prime number");
+        }
+        
+    }
+}
