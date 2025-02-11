@@ -1,0 +1,53 @@
+(Using Loop)
+
+public static voide main(String Args[])
+{
+  Console.WriteLine("Enter Number");
+  
+  int Num =Convert.ToInt32(Console.ReadLine());
+  
+  int OriginalNumber = Num;
+  int Reverse =0;
+  int Temp =0;
+  
+  While(Num>0)
+  {
+    Temp = Num % 10 ;//Find Last digit of Number
+	Reverse = Reverse * 10 + Temp; // Add to Reverse number
+	Num = Num/10; Remove LAst Digit
+  }
+  
+  If(Num==OriginalNumber)
+  {
+    Console.WriteLine("Number Is Palindrome");
+  }
+  else
+  {
+    Console.WriteLine("Number Is Palindrome");
+  }
+}
+
+
+
+..............................................(Using String).....................................................................
+
+REverse Or Compare 
+
+
+public static voide main(String Args[])
+{
+  Console.WriteLine("Enter Number");
+  
+  string number = Console.ReadLine();
+  
+  string Reversed = new string(number.Reverse().ToArray());
+  
+  If(number==Reversed)
+  {
+    Console.WriteLine("Number Is Palindrome");
+  }
+  else
+  {
+    Console.WriteLine("Number Is Palindrome");
+  }
+}
