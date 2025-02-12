@@ -1,0 +1,24 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Swapping of two numbers using a third variable");
+        int a = 5;
+        int b = 6;
+        int c;
+
+        Console.WriteLine("Before swap:");
+        Console.WriteLine("a = " + a);
+        Console.WriteLine("b = " + b);
+
+        c = a;
+        a = b;
+        b = c;
+
+        Console.WriteLine("After swap:");
+        Console.WriteLine("a = " + a);
+        Console.WriteLine("b = " + b);
+    }
+}
