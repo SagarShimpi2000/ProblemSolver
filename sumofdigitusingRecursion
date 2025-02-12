@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Programming
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+          // Console.WriteLine( print(num,0));
+           Console.WriteLine( print(num));
+        }
+
+        static int print(int num) {
+            if (num == 0)
+                return 0;
+            
+            return ((num % 10)+print(num / 10));
+        }
+    }
+}
