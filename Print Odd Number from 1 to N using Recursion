@@ -1,0 +1,64 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number (n): ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"Odd numbers from 1 to {n}:");
+        PrintOddNumbers(1, n);
+    }
+
+    static void PrintOddNumbers(int current, int n)
+    {
+        // Base case: stop recursion if current exceeds n
+        if (current > n)
+        {
+            return;
+        }
+
+        // Print the current number if it's odd
+        if (current % 2 != 0)
+        {
+            Console.WriteLine(current);
+        }
+
+        // Call the function recursively with the next number
+        PrintOddNumbers(current + 1, n);
+    }
+}
+
+
+
+............................................................................................................................................................................................................
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number (n): ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"Odd numbers from 1 to {n}:");
+        PrintOddNumbers(n);
+    }
+
+    static void PrintOddNumbers(int n)
+    {
+        // Base case: stop recursion if current exceeds n
+        if (n <=0)
+        {
+            return;
+        }
+       PrintOddNumbers(n-1);
+        
+        if (n % 2 != 0)
+        {
+            Console.WriteLine(n+"");
+        }
+      
+    }
+}
