@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Programming
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+           
+            //sol-1
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j <=i; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+
+            //sol2
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(j+1+" ");
+                }
+                Console.WriteLine();
+            }
+
+            //sol3
+            int increment = 1;
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(increment+" ");
+                    ++increment;
+                }
+                Console.WriteLine();
+            }
+
+            //sol4
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    if (j % 2 == 0) {
+                        Console.Write("* ");
+                    }
+                    else
+                    {
+                        Console.Write("# ");
+                    }
+                    
+                }
+                Console.WriteLine();
+            }
+
+
+        }
+
+
+    }
+}
