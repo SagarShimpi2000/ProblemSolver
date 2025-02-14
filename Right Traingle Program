@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        for (int i = 1; i <= 4; i++) // Loop for rows
+        {
+            for (int j = 1; j <= i; j++) // Loop for printing numbers
+            {
+                Console.Write(j); // Print numbers in the row
+            }
+            Console.WriteLine(); // Move to the next line
+        }
+    }
+}
